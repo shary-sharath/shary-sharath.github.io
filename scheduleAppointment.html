@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            $("#mySidenav").css("width","0");
+        }
+    </script>
+    <link type="text/css" href="CSS/custom.css" rel="stylesheet" />
+    <title>Patient Registration</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <header class="navbar fixed-top">
+        <p>CHMS</p>
+    </header>
+    <div class="container" id="" style="border:1px solid #0094ff; border-radius:5px;">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <div class="row">
+            <div class="col-md-2">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Patient Registration</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="col-md-5"><!--schedule appointment-->
+                <form>
+                    from is hospital and to is patient's public key
+                    <span class="bold">Enter Patient Name:</span>
+                    <input type="text" class="form-control" />
+                    <span class="bold">Enter Doctor Name:</span>
+                    <input type="text" class="form-control" />
+                    <span class="bold">Appointment Date & Time:</span>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="bold">Primary Symptoms:</span>
+                    <input type="text" class="form-control" />
+                    <span class="bold">Existing Illness (if any):</span>
+                    <input type="text" class="form-control" />
+                    <span class="bold">Registration Fee:</span>
+                    <input type="text" class="form-control" />
+                    <br />
+                    <input type="button" class="btn btn-primary" value="Submit" />
+                </form>
+            </div>
+            <div class="col-md-5">
+                <img src="images/HMS-side-image2.jpg" class="img-fluid" style="width:100%" />
+            </div>
+        </div>
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Item 1</h2>
+                    <p class="col-justified">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Item 1</h2>
+                    <p class="col-justified">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Item 1</h2>
+                    <p class="col-justified">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
